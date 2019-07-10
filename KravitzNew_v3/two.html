@@ -1,0 +1,94 @@
+﻿
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="myStyle/StyleSheet.css" rel="stylesheet" />
+        <!-- Scripts -->
+        <script src="jScripts/jquery-1.12.0.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+    </head>
+    <body>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">אלקטרוניקה</a>
+                <a href="#">מודל חצי"ם</a>
+                <a href="#">s'מודל קצפת</a>
+                <a href="#">אודות</a>
+            </div>
+        </div>
+        <div style="height: 100px; width: 100px; position: absolute; left: 50%; margin-left: -50px; right: 50%; margin-right: -50px;top: 0;">
+            <div style="font-size:30px;cursor:pointer; color:white; background-color: #f7a60f; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; text-align:center;" onclick="openNav()">&#9776;</div>
+        </div>
+
+        <script>
+function openNav() {
+  document.getElementById("myNav").style.height = "60%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+        </script>
+
+        <!--תפריט תחתון:
+        https://codepen.io/john-sexton/pen/oeGGag-->
+
+
+        <!--<script>
+            var navItems = document.querySelectorAll(".mobile-bottom-nav__item");
+            navItems.forEach(function (e, i) {
+                e.addEventListener("click", function (e) {
+                    navItems.forEach(function (e2, i2) {
+                        e2.classList.remove("mobile-bottom-nav__item--active");
+                    })
+                    this.classList.add("mobile-bottom-nav__item--active");
+                });
+            });
+        </script>-->
+
+        <nav class="mobile-bottom-nav">
+                <div class="mobile-bottom-nav__item">
+                    <a href="one.html">
+                        <div class="mobile-bottom-nav__item-content">
+                            <i class="material-icons">home</i>
+                            one
+                        </div>
+                    </a>
+                </div>
+
+            <div class="mobile-bottom-nav__item mobile-bottom-nav__item--activeMiddle">
+                <a href="two.html">
+                    <div class="mobile-bottom-nav__item-content">
+                        <i class="material-icons">mail</i>
+                        two
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-bottom-nav__item">
+                <a href="three.html">
+                    <div class="mobile-bottom-nav__item-content">
+                        <i class="material-icons">person</i>
+                        three
+                    </div>
+                    </a>
+            </div>
+
+            <div class="mobile-bottom-nav__item">
+                <a href="four.html">
+                    <div class="mobile-bottom-nav__item-content">
+                        <i class="material-icons">phone</i>
+                        four
+                    </div>
+                    </a>
+                    </div>
+        </nav>
+
+    </body>
+</html>
+
+
